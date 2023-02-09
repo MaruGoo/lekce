@@ -1,12 +1,13 @@
 import json
-with open('body.json', encoding='utf-8') as soubor:
-    body = json.load(soubor)
-print(body)
+with open('person.json', encoding='utf-8') as vstupni_soubor:
+    person = json.load(vstupni_soubor)
 
-for person in body:
-    print(f"klic je {person} a jeho hodnota je {body[person]}")
-    if body >=60:
-        print(f"Pass")
+prospech_slovnik = {}
+for body in person:
+    if (person[body]) >= 60:
+        prospech_slovnik[body] = "Pass"
     else:
-        print(f"Fail")
+        prospech_slovnik[body] = "Fail"
+with open("person_prospech.json", mode="w", encoding="utf-8") as vystupni_soubor:
+    json.dump(prospech_slovnik, vystupni_soubor, ensure_ascii=False, indent=4)
 
