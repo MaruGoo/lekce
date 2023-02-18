@@ -15,7 +15,7 @@ for den in range(7):
     teploty_dny.append(f"Den {den + 1} = {teploty[den]}")
 print(teploty_dny)
 
-# Vytvořte seznam ranních teplot.¨
+# Vytvořte seznam ranních teplot.
 
 teploty_rano = [rano[0] for rano in teploty]
 print(teploty_rano)
@@ -26,4 +26,9 @@ teploty_noc = [noc[3] for noc in teploty]
 print(teploty_noc)
 
 # Vytvořte seznam dvouprvkových seznamů obsahujících pouze polední a noční teplotu.
-teploty_poledne_noc = [poledne[1] for poledne in teploty] #, noc[3] for noc in teploty]
+teploty_poledne = [poledne[1] for poledne in teploty]
+
+teploty_poledne_noc = []
+for poledne_noc in teploty:
+    teploty_poledne_noc
+print(teploty_poledne_noc)
