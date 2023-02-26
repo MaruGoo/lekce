@@ -28,7 +28,5 @@ print(teploty_noc)
 # Vytvořte seznam dvouprvkových seznamů obsahujících pouze polední a noční teplotu.
 teploty_poledne = [poledne[1] for poledne in teploty]
 
-teploty_poledne_noc = []
-for poledne_noc in teploty:
-    teploty_poledne_noc
+teploty_poledne_noc = [[poledne_noc[1], poledne_noc[3]] for poledne_noc in teploty]
 print(teploty_poledne_noc)
