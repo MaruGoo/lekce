@@ -10,10 +10,8 @@ teploty = [
 ]
 # Vytvořte seznam průměrných teplot pro každý den.
 
-teploty_dny = []
-for den in range(7):
-    teploty_dny.append(f"Den {den + 1} = {teploty[den]}")
-print(teploty_dny)
+prumerne_teploty=[round(sum(den[:])/len(den[:]),2) for den in teploty]
+print(prumerne_teploty)
 
 # Vytvořte seznam ranních teplot.
 
@@ -26,7 +24,6 @@ teploty_noc = [noc[3] for noc in teploty]
 print(teploty_noc)
 
 # Vytvořte seznam dvouprvkových seznamů obsahujících pouze polední a noční teplotu.
-teploty_poledne = [poledne[1] for poledne in teploty]
 
 teploty_poledne_noc = [[poledne_noc[1], poledne_noc[3]] for poledne_noc in teploty]
 print(teploty_poledne_noc)
