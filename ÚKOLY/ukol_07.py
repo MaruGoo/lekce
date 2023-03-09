@@ -19,12 +19,12 @@ auto_2 = Auto(registracni_znacka="1P3 4747", typ_vozidla="Škoda Octavia", najet
 
 auto_znacka = input("Jakou značku vozidla si přejete půjčit?")
 if auto_znacka == "Peugeot":
-    auto_1.get_info()
-    auto_1.pujc_auto()
+    print(auto_1.get_info())
+    print(auto_1.pujc_auto())
     auto_1.dostupnost = False
 elif auto_znacka == "Škoda":
-    auto_2.get_info()
-    auto_2.pujc_auto()
+    print(auto_2.get_info())
+    print(auto_2.pujc_auto())
     auto_2.dostupnost = False
 else:
     print("Vozidlo není v naší nabídce")
