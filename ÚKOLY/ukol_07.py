@@ -20,11 +20,9 @@ auto_znacka = input("Jakou značku vozidla si přejete půjčit?")
 if auto_znacka == "Peugeot":
     print(auto_1.get_info())
     print(auto_1.pujc_auto())
-    dostupnost = False
 elif auto_znacka == "Škoda":
     print(auto_2.get_info())
     print(auto_2.pujc_auto())
-    dostupnost = False
 else:
     print("Vozidlo není v naší nabídce")
 
